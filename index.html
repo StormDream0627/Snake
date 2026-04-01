@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake-114</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app" aria-label="Snake game app">
+    <h1 class="title">Snake-114</h1>
+
+    <div id="controls" class="controls" aria-label="Game controls">
+      <button id="startBtn" type="button">Start</button>
+      <button id="pauseBtn" type="button">Pause</button>
+      <p id="score" aria-live="polite">Score: 0</p>
+    </div>
+
+    <div class="board-wrap">
+      <div
+        id="gameBoard"
+        role="grid"
+        aria-label="Snake game board 30 by 30"
+        aria-rowcount="30"
+        aria-colcount="30"
+      ></div>
+    </div>
+
+    <p class="hint">Use Arrow Keys to move</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
